@@ -1126,11 +1126,12 @@ p {
 }
 
 .modal__dialog {
+    background: url("../images/travel_Iimage.png") right center no-repeat;
     width: 100%;
     max-width: 1200px;
     margin: auto;
     position: relative;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.822);
     transform: scale(0);
     transition: transform .2s linear;
 }
@@ -1165,14 +1166,14 @@ p {
     margin-bottom: 3.6rem;
     font-size: 3rem;
     text-transform: uppercase;
-    color: #b2abb9;
+    color: #39373b;
     font-weight: 700;
 }
 
 .modal__subtitle {
     text-transform: uppercase;
     font-size: 1.06rem;
-    color: #b4afb9;
+    color: #464349;
     font-weight: 400;
 }
 
@@ -1213,8 +1214,8 @@ p {
 }
 
 .modal-work__info {
-    font-size: 1.2rem;
-    color: #6a696b;
+    font-size: 1.4rem;
+    color: #424044;
     text-transform: uppercase;
 }
 
@@ -1228,22 +1229,22 @@ p {
 
 .modal-work__client-title {
     margin-bottom: .2rem;
-    font-size: 1.06rem;
+    font-size: 1.2rem;
     color: #2b2a2c;
     font-weight: 700;
 }
 
 .modal-work__client-company {
-    font-size: .94rem;
+    font-size: 1.1rem;
     font-style: italic;
     color: #6a696b;
 }
 
 .modal-work__text {
     margin-bottom: 8.66rem;
-    font-size: .8rem;
+    font-size: 1.2rem;
     line-height: 2;
-    color: #6a696b;
+    color: #343136;
     font-weight: 300;
 }
 
@@ -1264,7 +1265,7 @@ p {
     border: 0;
     cursor: pointer;
     font-family: inherit;
-    font-size: .94rem;
+    font-size: 1.2rem;
     color: #2b2a2c;
     text-transform: uppercase;
 }
@@ -1319,6 +1320,7 @@ p {
 }
 
 .timeline__date {
+    font-weight: normal;
     display: block;
     margin-bottom: .8rem;
     text-decoration: underline;
@@ -1328,7 +1330,7 @@ p {
 
 .timeline__subtitle {
     margin-bottom: .2rem;
-    font-size: 1.06rem;
+    font-size: 1.2rem;
     color: #2b2a2c;
     font-weight: 700;
 }
@@ -1341,9 +1343,9 @@ p {
 
 .timeline__text {
     margin-top: .8rem;
-    font-size: .8rem;
+    font-size: 1.1rem;
     line-height: 1.5;
-    color: #6a696b;
+    color: #302f31;
     font-weight: 300;
 }
 
@@ -1380,7 +1382,7 @@ p {
 
 .contact {
     display: flex;
-    background: url("../images/Hero.png") right center no-repeat;
+    background: url("../images/Sleep.png") right center no-repeat;
 }
 
 .contact__left {
