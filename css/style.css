@@ -3,8 +3,10 @@
 @import "helpers.less";
 
 
+
 html {
    font-size: 15px;
+   color: rgb(76, 76, 76);
 }
 
 body {
@@ -12,7 +14,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: rgb(10, 71, 10);
-    background-color: rgba(24, 73, 73, 0.589);
+    height: 200px;
+    background-image: linear-gradient(45deg, #ccc, #949494);
 }
 .body.no-scroll {
     overflow: hidden;
@@ -101,6 +104,13 @@ p {
 *:after {
     box-sizing: border-box;
 }
+
+  
+
+.msg {
+    color: ivory;
+}
+
 
 .slick-slider {
     position: relative;
@@ -1128,7 +1138,7 @@ p {
 .modal__dialog {
     background: url("../images/travel_Iimage.png") right center no-repeat;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: auto;
     position: relative;
     background-color: rgba(255, 255, 255, 0.822);
@@ -1137,7 +1147,7 @@ p {
 }
 
 .modal__dialog--sm {
-    max-width: 900px;
+    max-width: 1024px;
 }
 
 .modal__close {
@@ -1166,7 +1176,7 @@ p {
     margin-bottom: 3.6rem;
     font-size: 3rem;
     text-transform: uppercase;
-    color: #39373b;
+    color: #6482d4;
     font-weight: 700;
 }
 
@@ -1382,7 +1392,7 @@ p {
 
 .contact {
     display: flex;
-    background: url("../images/Sleep.png") right center no-repeat;
+    background: url("../images/Hero.png") no-repeat;
 }
 
 .contact__left {
@@ -1497,3 +1507,5 @@ p {
 .hide {
     display: none;
 }
+
+
