@@ -432,14 +432,14 @@ p {
     vertical-align: top;
     padding: 1.05em 1.7em;
     min-width: 170px;
-    border: 1px solid #ccbfcc;
+    border: 1px solid #1f868d;
     border-radius: 1.8em;
     background: none;
     cursor: pointer;
     font-family: inherit;
     font-size: 1.06rem;
     line-height: 1.1;
-    color: #d2cbd8;
+    color: #1f868d;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
@@ -451,7 +451,7 @@ p {
 }
 
 .btn:hover {
-    background-color: #2b2a2c;
+    background-color: #1f868d;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
     color: #fff;
     border-color: #efedf1;
@@ -509,7 +509,7 @@ p {
 .works__nav-link {
     margin: 0 1.2rem;
     font-size: .8rem;
-    color: rgba(43, 42, 44, 0.7);
+    color: rgba(178, 198, 218, 0.7);
     text-decoration: none
 }
 
@@ -553,7 +553,7 @@ p {
 .work__cat {
     margin-bottom: .5rem;
     font-size: .8rem;
-    color: #2b2a2c;
+    color: #a7acbb;
     text-transform: uppercase
 }
 
@@ -561,7 +561,7 @@ p {
     display: flex;
     justify-content: space-between;
     font-size: 1.06rem;
-    color: #2b2a2c;
+    color: #b1c1ca;
     text-transform: uppercase;
     font-weight: 700
 }
@@ -676,7 +676,7 @@ p {
 
 .about__title {
     font-size: 2.6rem;
-    color: #2b2a2c;
+    color: #abbec9;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -699,7 +699,7 @@ p {
     left: -10px;
     font-size: 4.1rem;
     line-height: 4.4rem;
-    color: rgba(43, 42, 44, 0.15);
+    color: rgba(172, 188, 197, 0.15);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -726,7 +726,7 @@ p {
     margin-bottom: 2.8rem;
     font-size: 1rem;
     line-height: 2;
-    color: #280f41;
+    color: #9cb1c9;
     font-weight: 300;
 }
 
@@ -771,19 +771,20 @@ p {
 .reviews__name {
     margin-bottom: .3rem;
     font-size: 1.06rem;
-    color: #2b2a2c;
+    color: #9db2b8;
     font-weight: 700
 }
 
 .reviews__company {
     margin-bottom: .4rem;
     font-size: .94rem;
-    color: #280f41;
+    color: #a2c0c7;
     font-style: italic;
     font-weight: 300
 }
 
 .reviews__star {
+    color: ivory;
     width: 13px;
     height: 13px
 }
@@ -812,7 +813,7 @@ p {
 .news__title {
     margin-bottom: .3rem;
     font-size: 3rem;
-    color: #2b2a2c;
+    color: #94adbb;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -825,7 +826,7 @@ p {
 
 .news__text {
     font-size: 1.2rem;
-    color: #101033;
+    color: #9ec4ce;
     font-weight: 300;
 }
 
@@ -835,7 +836,7 @@ p {
 
 .news__link {
     font-size: 1rem;
-    color: #160b20;
+    color: #69a9d3;
     font-weight: normal;
 }
 
@@ -906,7 +907,7 @@ p {
 .articles__title {
     margin-bottom: .6rem;
     font-size: 1.2rem;
-    color: #2b2a2c;
+    color: #6daace;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -923,13 +924,13 @@ p {
 .articles__cat {
     margin-bottom: 1.5rem;
     font-size: 1rem;
-    color: #2b2a2c;
+    color: #70b1cf;
     text-transform: uppercase;
 }
 
 .articles__text {
     font-size: 1rem;
-    color: #280f41;
+    color: #5fa6c7;
     font-weight: 300;
     line-height: 2;
 }
@@ -1046,7 +1047,7 @@ p {
     height: 100%;
     padding: 1rem;
     overflow: auto;
-    background-color: rgba(6, 15, 49, 0.9);
+    background-color: rgba(148, 161, 209, 0.9);
     position: fixed;
     top: 0;
     left: 0;
@@ -1058,7 +1059,6 @@ p {
 }
 
 .modal__dialog {
-    background: url("../images/travel_Iimage.png") right center no-repeat;
     width: 100%;
     max-width: 1024px;
     margin: auto;
@@ -1098,14 +1098,14 @@ p {
     margin-bottom: 3.6rem;
     font-size: 3rem;
     text-transform: uppercase;
-    color: #6482d4;
+    color: #07303d;
     font-weight: 700;
 }
 
 .modal__subtitle {
     text-transform: uppercase;
     font-size: 1.06rem;
-    color: #464349;
+    color: #07303d;
     font-weight: 400;
 }
 
@@ -1140,14 +1140,14 @@ p {
 .modal-work__title {
     margin-bottom: .2rem;
     font-size: 2.12rem;
-    color: #2b2a2c;
+    color: #07303d;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .modal-work__info {
     font-size: 1.4rem;
-    color: #424044;
+    color: #07303d;
     text-transform: uppercase;
 }
 
@@ -1162,21 +1162,21 @@ p {
 .modal-work__client-title {
     margin-bottom: .2rem;
     font-size: 1.2rem;
-    color: #2b2a2c;
+    color: #07303d;
     font-weight: 700;
 }
 
 .modal-work__client-company {
     font-size: 1.1rem;
     font-style: italic;
-    color: #6a696b;
+    color: #07303d;
 }
 
 .modal-work__text {
     margin-bottom: 8.66rem;
     font-size: 1.2rem;
     line-height: 2;
-    color: #343136;
+    color: #07303d;
     font-weight: 300;
 }
 
@@ -1198,7 +1198,7 @@ p {
     cursor: pointer;
     font-family: inherit;
     font-size: 1.2rem;
-    color: #2b2a2c;
+    color: #07303d;
     text-transform: uppercase;
 }
 
@@ -1215,7 +1215,7 @@ p {
     display: block;
     width: 1px;
     height: 100%;
-    background-color: #2b2a2c;
+    background-color: #07303d;
     position: absolute;
     top: 0;
     left: 50%;
@@ -1238,7 +1238,7 @@ p {
 .timeline__title {
     margin-bottom: 2.6rem;
     font-size: 1.2rem;
-    color: #2b2a2c;
+    color: #07303d;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -1257,19 +1257,19 @@ p {
     margin-bottom: .8rem;
     text-decoration: underline;
     font-size: .94rem;
-    color: #2b2a2c;
+    color: #07303d;
 }
 
 .timeline__subtitle {
     margin-bottom: .2rem;
     font-size: 1.2rem;
-    color: #2b2a2c;
+    color: #07303d;
     font-weight: 700;
 }
 
 .timeline__position {
     font-size: .94rem;
-    color: #2b2a2c;
+    color: #07303d;
     font-style: italic;
 }
 
@@ -1277,7 +1277,7 @@ p {
     margin-top: .8rem;
     font-size: 1.1rem;
     line-height: 1.5;
-    color: #302f31;
+    color: #07303d;
     font-weight: 300;
 }
 
@@ -1314,7 +1314,7 @@ p {
 
 .contact {
     display: flex;
-    background: url("../images/Hero.png") no-repeat;
+    background: url("https://images.pexels.com/photos/4928894/pexels-photo-4928894.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=475&w=830") right center no-repeat;
 }
 
 .contact__left {
@@ -1327,7 +1327,7 @@ p {
     padding: 0;
     list-style: none;
     font-size: 1.2rem;
-    color: #dbd3e4;
+    color: #05304d;
     font-weight: 500;
 }
 
@@ -1353,7 +1353,7 @@ p {
     display: inline-block;
     margin-bottom: .6rem;
     font-size: .8rem;
-    color: #d1c9d8;
+    color: #05304d;
     font-weight: 700;
 }
 
@@ -1362,10 +1362,9 @@ p {
     display: block;
     width: 100%;
     padding: 1.3rem 1.8rem;
-    border: 1px solid rgba(151, 36, 36, 0.3);
     border-radius: 1.8rem;
     font-family: inherit;
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: 1.2;
     font-weight: 300;
     color: #c0bdc4;
