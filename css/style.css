@@ -1040,11 +1040,26 @@ p {
     height: 100%;
     padding: 1rem;
     overflow: auto;
-    background-color: rgba(148, 161, 209, 0.9);
+    background-color: rgba(33, 164, 168, 0.9);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+}
+
+@media (max-width: 360px) {
+    .modal {
+        display: none;
+    width: 100vh;
+    height: 100vh;
+    padding: 1rem;
+    overflow: auto;
+    background-color: rgba(32, 161, 165, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    }
 }
 
 .modal.show {
@@ -1053,7 +1068,7 @@ p {
 
 .modal__dialog {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1024px;
     margin: auto;
     position: relative;
     background-image: linear-gradient(45deg, rgb(110, 131, 128), #103532);
@@ -1306,12 +1321,12 @@ p {
 }
 
 .contact {
+    width: 100%;
     display: flex;
     background-image: linear-gradient(45deg, rgb(110, 131, 128), #103532);
 }
 
 .contact__left {
-    width: 47%;
     padding: 2rem;
 }
 
@@ -1360,7 +1375,7 @@ p {
     font-size: 1rem;
     line-height: 1.2;
     font-weight: 300;
-    color: #2da7cc;
+    color: #0f4150;
 }
 
 .form__input:focus,
@@ -1371,7 +1386,7 @@ p {
 
 .form__input::placeholder,
 .form__textarea::placeholder {
-    color: #2da7cc;
+    color: #104453;
 }
 
 .form__textarea {
