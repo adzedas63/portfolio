@@ -36,7 +36,6 @@
                 <a class="nav__link" href="#">about me</a>
                 <a class="nav__link" href="#">blog</a>
                 <a class="nav__link" href="#">contact</a>
-                <a class="nav__link  nav__link--btn" href="#" data-modal="#modal_hire_me">Rašyk man</a>
             </nav>
 
             <button class="burger" type="button" id="navToggle">
@@ -78,8 +77,32 @@
                     </a>
                 </div>
 
-                <a class="btn" href="#" data-modal="#modal_hire_me">Rašyk man</a>
-                <button class="btn" type="button" data-modal="#modal_resume">Žiūrėk mano RESUME</button>
+                 <!--Modal-->
+  
+
+<button class="modal__btn" data-modal-btn="my_modal_1"> <img src="images/youtube.svg" height="36px"
+    alt="1"></button>
+<div data-modal-window="my_modal_1" class="modal__mano">
+<div class="modal__content">
+    <div class="modal__inner">
+        <div class="modal__title">VARZYBOS</div>
+        <div class="close__modal__window">&times;</div>
+    </div>
+    <iframe width="1024" height="620" src="https://www.youtube.com/embed/axNnKy-jfWw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+                 <!--Modal-->
+  
+
+<button class="modal__btn" data-modal-btn="my_modal_2"> <img src="images/Button-Red.svg" height="36px"
+    alt="1"></button>
+<div data-modal-window="my_modal_2" class="modal__mano">
+<div class="modal__content">
+    <div class="modal__inner">
+        <div class="modal__title">Rasykit man</div>
+        <div class="close__modal__window">&times;</div>
+    </div>
+    <iframe width="1024" height="620" src="https://www.youtube.com/embed/QkinG08IoKk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
             </div>
 
         </div><!-- /.intro__inner -->
@@ -208,8 +231,37 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste a dolores consectetur provident ratione quo reiciendis, eligendi aliquid error ab ducimus fugit, quia perferendis id laboriosam animi eos excepturi sint.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste a dolores consectetur provident ratione quo reiciendis, eligendi aliquid error ab ducimus fugit, quia perferendis id laboriosam animi eos excepturi sint.</p>
                 </div>
-                <a class="btn" href="#" data-modal="#modal_hire_me">Rašyk man</a>
-                <button class="btn" type="button" data-modal="#modal_resume">Žiūrėk mano RESUME</button>
+                 <!--Modal-->
+  
+
+<button class="modal__btn" data-modal-btn="my_modal_3"> <img src="images/Button-Green.svg" height="36px"
+    alt="1"></button>
+<div data-modal-window="my_modal_3" class="modal__mano">
+<div class="modal__content">
+    <div class="modal__inner">
+        <div class="modal__title">Mano Portfolio</div>
+        <div class="close__modal__window">&times;</div>
+    </div>
+    <iframe width="1024" height="620" src="https://www.youtube.com/embed/GPi_JbWC5Qs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
+
+ <!--Modal-->
+  <button class="modal__btn" data-modal-btn="my_modal_4"><img src="images/10_icon.png" height="36px"
+    alt="1">
+    </button>
+
+ 
+<div data-modal-window="my_modal_4" class="modal__mano">
+<div class="modal__content">
+    <div class="modal__inner">
+        <div class="modal__title">Projektai</div>
+        <div class="close__modal__window">&times;</div>
+    </div> 
+    <iframe width="1024" height="620" src="https://www.youtube.com/embed/ElOhJyNPjUE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
             </div><!-- /.about__content -->
         </div><!-- /.about__inner -->
 
@@ -373,13 +425,11 @@
                 <a class="footer__nav-link" href="#">About me</a>
                 <a class="footer__nav-link" href="#">Blog</a>
                 <a class="footer__nav-link" href="#">Contact</a>
-                <a class="footer__nav-link  footer__nav-link--btn" href="#" data-modal="#modal_hire_me">Rasyk man</a>
             </nav>
         </div><!-- /.footer__inner -->
 
     </div><!-- /.container -->
 </footer>
-
 
 
 
@@ -635,49 +685,7 @@
 </div><!-- /.modal -->
 
 
-<div class="modal" id="modal_hire_me">
-    <div class="modal__dialog  modal__dialog--sm">
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/Plus.svg" height="24px" alt="Close">
-        </button>
-
-        <div class="contact">
-            <div class="contact__left">
-                <h3 class="modal__title mb-0">PAKALBEKIME!</h3>
-                <h4 class="modal__subtitle">SKAMBINK MAN ARBA SIUSK UZKLAUSIMA</h4>
-
-                <ul class="contact__info">
-                    <li class="contact__info-item">
-                        <img class="contact__info-icon" src="images/whatsapp.svg" height="68px" alt="whatsapp">
-                        +370 611 86208
-                    </li>
-                    <li class="contact__info-item">
-                        <img class="contact__info-icon" src="images/mail.png" height="48px" alt="">
-                        <arunas@dzedulionis class="lt"></arunas@dzedulionis>
-                    </li>
-                </ul>
-
-                <form class="form" action="/" method="post">
-                    <div class="form__group">
-                        <label class="form__label" for="input-email">El.pastas</label>
-                        <input class="form__input" name="input-email" type="text" id="input-email" placeholder="Adress e-mail">
-                    </div>
-
-                    <div class="form__group">
-                        <label class="form__label" for="input-text">UZKLAUSIMAS</label>
-                        <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
-                    </div>
-
-                    <div class="text-right">
-                        <button class="btn" type="submit">SIUSTI</button>
-                    </div>
-                </form>
-            </div><!-- /.contact__left -->
-        </div><!-- /.contact -->
-
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
 
 
 
