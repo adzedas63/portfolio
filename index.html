@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
@@ -8,690 +9,717 @@
     <title>Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
 <body>
 
 
-<!-- Header -->
-<header class="header">
+    <!-- Header -->
+    <header class="header">
 
-           
 
-    <div class="container">
-        <div class="header__inner">
 
-            <div class="user">
-                <div class="user__avatar">
-                    <img src="images/2_300x300.jpg" height="60px" alt="avatar">
-                </div>
-                <div class="user__content">
-                    <div class="user__name">
-                        Romualdas<br>Žakas
+        <div class="container">
+            <div class="header__inner">
+
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="images/2_300x300.jpg" height="60px" alt="avatar">
                     </div>
-                    <div class="user__prof">IRKLAVIMAS &amp; Vairininkas</div>
+                    <div class="user__content">
+                        <div class="user__name">
+                            Romualdas<br>Žakas
+                        </div>
+                        <div class="user__prof">IRKLAVIMAS &amp; Vairininkas</div>
+                    </div>
                 </div>
+
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#">work</a>
+                    <a class="nav__link" href="#">about me</a>
+                    <a class="nav__link" href="#">blog</a>
+                    <a class="nav__link" href="#">contact</a>
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <img class="burger__icon" src="images/burger.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- Intro -->
+    <section class="intro">
+        <div class="container">
+
+            <div class="intro__inner">
+                <div class="intro__content">
+
+
+                    <div class="social">
+                        <a class="social__link" href="#">
+                            <img src="images/facebook.svg" height="20px" alt="fb">
+                        </a>
+                        <a class="social__link" href="#">
+                            <img src="images/whatsapp.svg" height="20px" alt="whatsapp">
+                        </a>
+                        <a class="social__link" href="#">
+                            <img src="images/instagram.svg" height="20px" alt="instagram">
+                        </a>
+                        <a class="social__link" href="#">
+                            <img src="images/linkedin.svg" height="20px" alt="linkedin">
+                        </a>
+                        <a class="social__link" href="#">
+                            <img src="images/pinterest.svg" height="20px" alt="pinterest">
+                        </a>
+                        <a class="social__link" href="#">
+                            <img src="images/skype.svg" height="20px" alt="skype">
+                        </a>
+                    </div>
+                    <div class="portfolio" id="portfolio">
+                        <div class="portfolio__col" data-cat="app">
+                            <div class="work" data-modal="#modal_project_2">
+                                <img class="work__image" src="images/youtube.svg" height="120px" width="120px" alt="youtube">
+                                <div class="work__content">
+                                    <div class="work__cat">IRKLAVIMAS</div>
+                                    <div class="work__title">
+                                        IRKLAVIMAS
+                                        <time class="work__date" datetime="2019-11-22 19:00">2017</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__col" data-cat="app">
+                            <div class="work" data-modal="#modal_project_1">
+                                <img class="work__image" src="images/Juros_Vejo_Malunai.jpg" height="120px"
+                                    width="180px" alt="IRKLAVIMAS">
+                                <div class="work__content">
+                                    <div class="work__cat">IRKLAVIMAS</div>
+                                    <div class="work__title">
+                                        IRKLAVIMAS
+                                        <time class="work__date" datetime="2019-11-22 19:00">2017</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div><!-- /.intro__inner -->
+
+            </div><!-- /.container -->
+    </section>
+
+
+    <!--- Pridejau data --->
+    <div class="data__button">
+        <time class="msg" id="msg"></time>
+
+    </div>
+
+    <!-- Works -->
+    <div class="works">
+        <div class="container">
+
+            <div class="works__nav">
+                <a class="works__nav-link" href="#" data-filter="all">VISI</a>
+                <a class="works__nav-link" href="#" data-filter="app">IRKLAVIMAS</a>
+                <a class="works__nav-link" href="#" data-filter="website">STOVYKLOS</a>
+                <a class="works__nav-link" href="#" data-filter="interaction">VARZYBOS</a>
             </div>
 
-            <nav class="nav" id="nav">
-                <a class="nav__link" href="#">work</a>
-                <a class="nav__link" href="#">about me</a>
-                <a class="nav__link" href="#">blog</a>
-                <a class="nav__link" href="#">contact</a>
-            </nav>
 
-            <button class="burger" type="button" id="navToggle">
-                <img class="burger__icon" src="images/burger.svg" alt="">
+            <div class="portfolio" id="portfolio">
+                <div class="portfolio__col" data-cat="app">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="images/Juros_Vejo_Malunai.jpg" height="370PX" width="300PX"
+                            alt="IRKLAVIMAS">
+                        <div class="work__content">
+                            <div class="work__cat">IRKLAVIMAS</div>
+                            <div class="work__title">
+                                IRKLAVIMAS
+                                <time class="work__date" datetime="2019-11-22 19:00">2017</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="images/Juros_Vejo_Malunai_2.jpg" height="370PX" width="300PX"
+                            alt="STOVYKLOS">
+                        <div class="work__content">
+                            <div class="work__cat">STOVYKLOS</div>
+                            <div class="work__title">
+                                STOVYKLOS
+                                <time class="work__date" datetime="2019-11-22 19:00">2018</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="interaction">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="images/Juros_Vejo_Malunai_3.jpg" height="370PX" width="300PX"
+                            alt="VARZYBOS">
+                        <div class="work__content">
+                            <div class="work__cat">VARZYBOS</div>
+                            <div class="work__title">
+                                VARZYBOS
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="images/AugustaWW.jpg" height="370PX" width="300PX" alt="DARBAS">
+                        <div class="work__content">
+                            <div class="work__cat">DARBAS</div>
+                            <div class="work__title">
+                                DARBAS
+                                <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="interaction">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="images/AugustaWW.jpg" height="370PX" width="300PX" alt="PRAMOGOS">
+                        <div class="work__content">
+                            <div class="work__cat">PRAMOGOS</div>
+                            <div class="work__title">
+                                PRAMOGOS
+                                <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="app">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="images/AugustaWW.jpg" height="370PX" width="300PX" alt="BIZNIS">
+                        <div class="work__content">
+                            <div class="work__cat">Planai</div>
+                            <div class="work__title">
+                                PROJEKTAS
+                                <time class="work__date">2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.portfolio -->
+
+        </div><!-- /.container -->
+    </div><!-- /.works -->
+
+
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+
+            <div class="about__inner">
+                <div class="about__photo">
+                    <img class="img" src="images/2_300x300.jpg" height="470PX" width="400PX" alt="AS">
+                </div>
+
+                <div class="about__content">
+                    <h5 class="about__title">apie mane</h5>
+                    <h4 class="about__bigtitle">KAS AS ESU</h4>
+                    <div class="about__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste a dolores consectetur
+                            provident ratione quo reiciendis, eligendi aliquid error ab ducimus fugit, quia perferendis
+                            id laboriosam animi eos excepturi sint.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste a dolores consectetur
+                            provident ratione quo reiciendis, eligendi aliquid error ab ducimus fugit, quia perferendis
+                            id laboriosam animi eos excepturi sint.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste a dolores consectetur
+                            provident ratione quo reiciendis, eligendi aliquid error ab ducimus fugit, quia perferendis
+                            id laboriosam animi eos excepturi sint.</p>
+                    </div>
+                    <!--Modal-->
+
+                    <div class="portfolio" id="portfolio">
+
+                    <div class="portfolio__col" data-cat="interaction">
+                        <div class="work" data-modal="#modal_project_1">
+                            <img class="work__image" src="images/Juros_Vejo_Malunai_3.jpg" height="370PX" width="300PX"
+                                alt="VARZYBOS">
+                            <div class="work__content">
+                                <div class="work__cat">VARZYBOS</div>
+                                <div class="work__title">
+                                    VARZYBOS
+                                    <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--Modal-->
+                    <div class="portfolio__col" data-cat="interaction">
+                        <div class="work" data-modal="#modal_project_1">
+                            <img class="work__image" src="images/Juros_Vejo_Malunai_3.jpg" height="370PX" width="300PX"
+                                alt="VARZYBOS">
+                            <div class="work__content">
+                                <div class="work__cat">VARZYBOS</div>
+                                <div class="work__title">
+                                    VARZYBOS
+                                    <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div><!-- /.about__content -->
+            </div><!-- /.about__inner -->
+
+        </div><!-- /.container -->
+    </section>
+
+
+
+    <!-- Reviews -->
+    <div class="reviews">
+        <div class="container">
+
+            <div class="reviews__item">
+                <div class="reviews__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, neque perferendis nobis
+                        illum deserunt nisi fuga pariatur sunt porro amet qui asperiores ut, beatae placeat quo dolorem!
+                        Velit, harum, quaerat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, neque perferendis nobis
+                        illum deserunt nisi fuga pariatur sunt porro amet qui asperiores ut, beatae placeat quo dolorem!
+                        Velit, harum, quaerat.</p>
+                </div>
+
+                <div class="reviews__author">
+                    <img class="reviews__photo" src="images/avia-logo.svg" height="200px" alt="avia-logo">
+                    <div class="reviews__name">Irklavimo BAZE</div>
+                    <div class="reviews__company">TRAKAI - LIETUVA</div>
+                    <div class="reviews__rating">
+                        <img class="reviews__star" src="images/Star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="images/Star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="images/Star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="images/Star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star  reviews__star--unactive" src="images/Star.svg" width="13" height="13"
+                            alt="">
+                    </div>
+                </div>
+            </div><!-- /.reviews__item -->
+
+        </div><!-- /.container -->
+    </div><!-- /.reviews -->
+
+
+
+    <!-- News -->
+    <section class="news">
+        <div class="container">
+
+            <div class="news__header">
+                <h3 class="news__title">SKAITYK</h3>
+                <div class="news__text">KARTAIS YRA IDOMIU DALYKU APIE KURIUOS RASAU</div>
+            </div>
+
+
+            <div class="articles">
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">
+                                10<br>june
+                            </time>
+                            <a href="#">
+                                <img class="articles__photo" src="images/Juros_Vejo_Malunai.jpg" height="370PX"
+                                    width="300PX" alt="1">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                                <a href="#">Desimt geriausiu ivykiu 2017</a>
+                            </h4>
+                            <div class="articles__cat">VARZYBOS</div>
+                            <div class="articles__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu
+                                    enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet
+                                    ante. Sed iaculis eros sem, elementum consequat.</p>
+                            </div>
+                        </div>
+                        <a class="btn  btn--sm" href="#">SKAITYK DAUGIAU</a>
+                    </div>
+                </div>
+
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">
+                                20<br>july
+                            </time>
+                            <a href="#">
+                                <img class="articles__photo" src="images/Juros_Vejo_Malunai_2.jpg" height="370PX"
+                                    width="300PX" alt="2">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                                <a href="#">DESIMT GERIAUSIU ivykiu 2018</a>
+                            </h4>
+                            <div class="articles__cat">IRKLAVIMAS</div>
+                            <div class="articles__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu
+                                    enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet
+                                    ante. Sed iaculis eros sem, elementum consequat.</p>
+                            </div>
+                        </div>
+                        <a class="btn  btn--sm" href="#">SKAITYK DAUGIAU</a>
+                    </div>
+                </div>
+
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">
+                                10<br>SEPT
+                            </time>
+                            <a href="#">
+                                <img class="articles__photo" src="images/Juros_Vejo_Malunai_3.jpg" height="370PX" width="300PX" alt="3">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                                <a href="#">DESIMT GERIAUSIU ivykiu 2019</a>
+                            </h4>
+                            <div class="articles__cat">STOVYKLOS</div>
+                            <div class="articles__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu
+                                    enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet
+                                    ante. Sed iaculis eros sem, elementum consequat.</p>
+                            </div>
+                        </div>
+                        <a class="btn  btn--sm" href="#">SKAITYK DAUGIAU</a>
+                    </div>
+                </div>
+
+            </div><!-- /.articles -->
+
+
+
+        </div><!-- /.container -->
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__inner">
+                <div class="footer__credits">
+                    <div class="footer__copyright">
+                        &copy; 2020 ArunasDz
+                    </div>
+
+                    <div class="footer__social">
+                        <a href="#" target="_blank">
+                            <img src="images/linkedin.svg" width="24" alt="linkedin">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/pinterest.svg" width="18" alt="pinterest">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/skype.svg" width="18" alt="skype">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/twitter.svg" height="18" alt="twitter">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/whatsapp.svg" width="18" alt="whatsapp">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/youtube.svg" width="20" alt="youtube">
+                        </a>
+                    </div>
+                </div><!-- /.footer__credits -->
+
+                <nav class="footer__nav">
+                    <a class="footer__nav-link" href="#">Work</a>
+                    <a class="footer__nav-link" href="#">About me</a>
+                    <a class="footer__nav-link" href="#">Blog</a>
+                    <a class="footer__nav-link" href="#">Contact</a>
+                </nav>
+            </div><!-- /.footer__inner -->
+
+        </div><!-- /.container -->
+    </footer>
+
+
+
+
+    <!-- Modals -->
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/Plus.svg" height="28px" alt="Close">
             </button>
-        </div>
-    </div>
-</header>
 
-
-
-
-<!-- Intro -->
-<section class="intro">
-    <div class="container">
-
-        <div class="intro__inner">
-            <div class="intro__content">
-                
-
-                <div class="social">
-                    <a class="social__link" href="#">
-                        <img src="images/facebook.svg" height="20px" alt="fb">
-                    </a>
-                    <a class="social__link" href="#">
-                        <img src="images/whatsapp.svg" height="20px" alt="whatsapp">
-                    </a>
-                    <a class="social__link" href="#">
-                        <img src="images/instagram.svg" height="20px" alt="instagram">
-                    </a>
-                    <a class="social__link" href="#">
-                        <img src="images/linkedin.svg" height="20px" alt="linkedin">
-                    </a>
-                    <a class="social__link" href="#">
-                        <img src="images/pinterest.svg" height="20px" alt="pinterest">
-                    </a>
-                    <a class="social__link" href="#">
-                        <img src="images/skype.svg" height="20px" alt="skype">
-                    </a>
-                </div>
-
-                 <!--Modal-->
-  
-
-<button class="modal__btn" data-modal-btn="my_modal_1"> <img src="images/youtube.svg" height="36px"
-    alt="1"></button>
-<div data-modal-window="my_modal_1" class="modal__mano">
-<div class="modal__content">
-    <div class="modal__inner">
-        <div class="modal__title">VARZYBOS</div>
-        <div class="close__modal__window">&times;</div>
-    </div>
-    <iframe width="1024" height="620" src="https://www.youtube.com/embed/axNnKy-jfWw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
-                 <!--Modal-->
-  
-
-<button class="modal__btn" data-modal-btn="my_modal_2"> <img src="images/Button-Red.svg" height="36px"
-    alt="1"></button>
-<div data-modal-window="my_modal_2" class="modal__mano">
-<div class="modal__content">
-    <div class="modal__inner">
-        <div class="modal__title">Rasykit man</div>
-        <div class="close__modal__window">&times;</div>
-    </div>
-    <iframe width="1024" height="620" src="https://www.youtube.com/embed/QkinG08IoKk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-            </div>
-
-        </div><!-- /.intro__inner -->
-
-    </div><!-- /.container -->
-</section>
-
-
-<!--- Pridejau data --->
-<div class="data__button">
-    <time class="msg" id="msg"></time>
-
-</div>
-
-<!-- Works -->
-<div class="works">
-    <div class="container">
-
-        <div class="works__nav">
-            <a class="works__nav-link" href="#" data-filter="all">VISI</a>
-            <a class="works__nav-link" href="#" data-filter="app">IRKLAVIMAS</a>
-            <a class="works__nav-link" href="#" data-filter="website">STOVYKLOS</a>
-            <a class="works__nav-link" href="#" data-filter="interaction">VARZYBOS</a>
-        </div>
-
-
-        <div class="portfolio" id="portfolio">
-            <div class="portfolio__col" data-cat="app">
-                <div class="work" data-modal="#modal_project_1">
-                    <img class="work__image" src="images/Juros_Vejo_Malunai.jpg" height="370PX" width="300PX" alt="IRKLAVIMAS">
-                    <div class="work__content">
-                        <div class="work__cat">IRKLAVIMAS</div>
-                        <div class="work__title">
-                            IRKLAVIMAS
-                            <time class="work__date" datetime="2019-11-22 19:00">2017</time>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="images/Kyokushin_dirzas.jpg" height="65%" alt="77">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/RuBro-0963.jpg" height="65%" alt="88">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/RuBro-1608.jpg" height="65%" alt="77">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/RuBro-9.jpg" height="65%" alt="88">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/AugustaWW.jpg" height="65%" alt="77">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/Kyokushin_dirzas.jpg" height="65%" alt="88">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/Kyokushin_dirzas.jpg" height="65%" alt="77">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="images/Arunas_saleje_2019.jpg" height="65%" alt="88">
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="website">
-                <div class="work" data-modal="#modal_project_1">
-                    <img class="work__image" src="images/Juros_Vejo_Malunai_2.jpg" height="370PX" width="300PX" alt="STOVYKLOS">
-                    <div class="work__content">
-                        <div class="work__cat">STOVYKLOS</div>
-                        <div class="work__title">
-                            STOVYKLOS
-                            <time class="work__date" datetime="2019-11-22 19:00">2018</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="interaction">
-                <div class="work" data-modal="#modal_project_1">
-                    <img class="work__image" src="images/Juros_Vejo_Malunai_3.jpg" height="370PX" width="300PX" alt="VARZYBOS">
-                    <div class="work__content">
-                        <div class="work__cat">VARZYBOS</div>
-                        <div class="work__title">
-                            VARZYBOS
-                            <time class="work__date" datetime="2019-11-22 19:00">2019</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="website">
-                <div class="work" data-modal="#modal_project_1">
-                    <img class="work__image" src="images/AugustaWW.jpg" height="370PX" width="300PX" alt="DARBAS">
-                    <div class="work__content">
-                        <div class="work__cat">DARBAS</div>
-                        <div class="work__title">
-                            DARBAS
-                            <time class="work__date" datetime="2019-11-22 19:00">2020</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="interaction">
-                <div class="work" data-modal="#modal_project_1">
-                    <img class="work__image" src="images/AugustaWW.jpg" alt="PRAMOGOS">
-                    <div class="work__content">
-                        <div class="work__cat">PRAMOGOS</div>
-                        <div class="work__title">
-                            PRAMOGOS
-                            <time class="work__date" datetime="2019-11-22 19:00">2020</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="app">
-                <div class="work" data-modal="#modal_project_1">
-                    <img class="work__image" src="images/AugustaWW.jpg" height="370PX" width="300PX" alt="BIZNIS">
-                    <div class="work__content">
-                        <div class="work__cat">Planai</div>
-                        <div class="work__title">
-                            PROJEKTAS
-                            <time class="work__date">2021</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- /.portfolio -->
-
-    </div><!-- /.container -->
-</div><!-- /.works -->
-
-
-
-<!-- About -->
-<section class="about">
-    <div class="container">
-
-        <div class="about__inner">
-            <div class="about__photo">
-                <img class="img" src="images/2_300x300.jpg" height="470PX" width="400PX" alt="AS">
-            </div>
-
-            <div class="about__content">
-                <h5 class="about__title">apie mane</h5>
-                <h4 class="about__bigtitle">KAS AS ESU</h4>
-                <div class="about__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste a dolores consectetur provident ratione quo reiciendis, eligendi aliquid error ab ducimus fugit, quia perferendis id laboriosam animi eos excepturi sint.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste a dolores consectetur provident ratione quo reiciendis, eligendi aliquid error ab ducimus fugit, quia perferendis id laboriosam animi eos excepturi sint.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste a dolores consectetur provident ratione quo reiciendis, eligendi aliquid error ab ducimus fugit, quia perferendis id laboriosam animi eos excepturi sint.</p>
-                </div>
-                 <!--Modal-->
-  
-
-<button class="modal__btn" data-modal-btn="my_modal_3"> <img src="images/Button-Green.svg" height="36px"
-    alt="1"></button>
-<div data-modal-window="my_modal_3" class="modal__mano">
-<div class="modal__content">
-    <div class="modal__inner">
-        <div class="modal__title">Mano Portfolio</div>
-        <div class="close__modal__window">&times;</div>
-    </div>
-    <iframe width="1024" height="620" src="https://www.youtube.com/embed/GPi_JbWC5Qs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
-
-
- <!--Modal-->
-  <button class="modal__btn" data-modal-btn="my_modal_4"><img src="images/10_icon.png" height="36px"
-    alt="1">
-    </button>
-
- 
-<div data-modal-window="my_modal_4" class="modal__mano">
-<div class="modal__content">
-    <div class="modal__inner">
-        <div class="modal__title">Projektai</div>
-        <div class="close__modal__window">&times;</div>
-    </div> 
-    <iframe width="1024" height="620" src="https://www.youtube.com/embed/ElOhJyNPjUE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div>
-
-            </div><!-- /.about__content -->
-        </div><!-- /.about__inner -->
-
-    </div><!-- /.container -->
-</section>
-
-
-
-<!-- Reviews -->
-<div class="reviews">
-    <div class="container">
-
-        <div class="reviews__item">
-            <div class="reviews__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, neque perferendis nobis illum deserunt nisi fuga pariatur sunt porro amet qui asperiores ut, beatae placeat quo dolorem! Velit, harum, quaerat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, neque perferendis nobis illum deserunt nisi fuga pariatur sunt porro amet qui asperiores ut, beatae placeat quo dolorem! Velit, harum, quaerat.</p>
-            </div>
-
-            <div class="reviews__author">
-                <img class="reviews__photo" src="images/avia-logo.svg" height="200px" alt="avia-logo">
-                <div class="reviews__name">Irklavimo BAZE</div>
-                <div class="reviews__company">TRAKAI - LIETUVA</div>
-                <div class="reviews__rating">
-                    <img class="reviews__star" src="images/Star.svg" width="13" height="13" alt="">
-                    <img class="reviews__star" src="images/Star.svg" width="13" height="13" alt="">
-                    <img class="reviews__star" src="images/Star.svg" width="13" height="13" alt="">
-                    <img class="reviews__star" src="images/Star.svg" width="13" height="13" alt="">
-                    <img class="reviews__star  reviews__star--unactive" src="images/Star.svg" width="13" height="13" alt="">
-                </div>
-            </div>
-        </div><!-- /.reviews__item -->
-
-    </div><!-- /.container -->
-</div><!-- /.reviews -->
-
-
-
-<!-- News -->
-<section class="news">
-    <div class="container">
-
-        <div class="news__header">
-            <h3 class="news__title">SKAITYK</h3>
-            <div class="news__text">KARTAIS YRA IDOMIU DALYKU APIE KURIUOS RASAU</div>
-        </div>
-
-
-        <div class="articles">
-            <div class="articles__col">
-                <div class="articles__item">
-                    <div class="articles__header">
-                        <time class="articles__date">
-                            10<br>june
-                        </time>
-                        <a href="#">
-                            <img class="articles__photo" src="images/Juros_Vejo_Malunai.jpg" height="370PX" width="300PX" alt="1">
-                        </a>
-                    </div>
-                    <div class="articles__content">
-                        <h4 class="articles__title">
-                            <a href="#">Desimt geriausiu ivykiu 2017</a>
-                        </h4>
-                        <div class="articles__cat">VARZYBOS</div>
-                        <div class="articles__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</p>
-                        </div>
-                    </div>
-                    <a class="btn  btn--sm" href="#">SKAITYK DAUGIAU</a>
-                </div>
-            </div>
-
-            <div class="articles__col">
-                <div class="articles__item">
-                    <div class="articles__header">
-                        <time class="articles__date">
-                            20<br>july
-                        </time>
-                        <a href="#">
-                            <img class="articles__photo" src="images/Juros_Vejo_Malunai_2.jpg" height="370PX" width="300PX" alt="2">
-                        </a>
-                    </div>
-                    <div class="articles__content">
-                        <h4 class="articles__title">
-                            <a href="#">DESIMT GERIAUSIU ivykiu 2018</a>
-                        </h4>
-                        <div class="articles__cat">IRKLAVIMAS</div>
-                        <div class="articles__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</p>
-                        </div>
-                    </div>
-                    <a class="btn  btn--sm" href="#">SKAITYK DAUGIAU</a>
-                </div>
-            </div>
-
-            <div class="articles__col">
-                <div class="articles__item">
-                    <div class="articles__header">
-                        <time class="articles__date">
-                            10<br>SEPT
-                        </time>
-                        <a href="#">
-                            <img class="articles__photo" src="images/Juros_Vejo_Malunai_3.jpg" alt="3">
-                        </a>
-                    </div>
-                    <div class="articles__content">
-                        <h4 class="articles__title">
-                            <a href="#">DESIMT GERIAUSIU ivykiu 2019</a>
-                        </h4>
-                        <div class="articles__cat">STOVYKLOS</div>
-                        <div class="articles__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</p>
-                        </div>
-                    </div>
-                    <a class="btn  btn--sm" href="#">SKAITYK DAUGIAU</a>
-                </div>
-            </div>
-
-        </div><!-- /.articles -->
-
-       
-
-    </div><!-- /.container -->
-</section>
-
-
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-
-        <div class="footer__inner">
-            <div class="footer__credits">
-                <div class="footer__copyright">
-                    &copy; 2020 ArunasDz
-                </div>
-
-                <div class="footer__social">
-                    <a href="#" target="_blank">
-                        <img src="images/linkedin.svg" width="24" alt="linkedin">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="images/pinterest.svg" width="18" alt="pinterest">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="images/skype.svg" width="18" alt="skype">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="images/twitter.svg" height="18" alt="twitter">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="images/whatsapp.svg" width="18" alt="whatsapp">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="images/youtube.svg" width="20" alt="youtube">
-                    </a>
-                </div>
-            </div><!-- /.footer__credits -->
-
-            <nav class="footer__nav">
-                <a class="footer__nav-link" href="#">Work</a>
-                <a class="footer__nav-link" href="#">About me</a>
-                <a class="footer__nav-link" href="#">Blog</a>
-                <a class="footer__nav-link" href="#">Contact</a>
-            </nav>
-        </div><!-- /.footer__inner -->
-
-    </div><!-- /.container -->
-</footer>
-
-
-
-
-<!-- Modals -->
-<div class="modal" id="modal_project_1">
-    <div class="modal__dialog">
-
-        <button class="modal__close" type="button" data-close>
-            <img src="images/Plus.svg" height="28px" alt="Close">
-        </button>
-
-        <div class="modal-work">
-            <div class="modal-work__preview">
-                <div data-slider="slick">
-                    <div>
-                        <img class="modal-work__photo" src="images/Kyokushin_dirzas.jpg" height="100%" alt="77">
-                    </div>
-                    <div>
-                        <img class="modal-work__photo" src="images/RuBro-0963.jpg" height="100%" alt="88">
-                    </div>
-                    <div>
-                        <img class="modal-work__photo" src="images/RuBro-1608.jpg" height="100%" alt="77">
-                    </div>
-                    <div>
-                        <img class="modal-work__photo" src="images/RuBro-9.jpg" height="100%" alt="88">
-                    </div>
-                    <div>
-                        <img class="modal-work__photo" src="images/AugustaWW.jpg" height="100%" alt="77">
-                    </div>
-                    <div>
-                        <img class="modal-work__photo" src="images/Kyokushin_dirzas.jpg" height="100%" alt="88">
-                    </div>
-                    <div>
-                        <img class="modal-work__photo" src="images/Kyokushin_dirzas.jpg" height="100%" alt="77">
-                    </div>
-                    <div>
-                        <img class="modal-work__photo" src="images/Arunas_saleje_2019.jpg" height="100%" alt="88">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-work__content">
-
-                <div class="modal-work__header">
-                    <h3 class="modal-work__title">IRKLAVIMAS</h3>
-                    <div class="modal-work__info">
-                        IRKLAVIMAS <span class="modal-work__info-divider">|</span> 2018
-                    </div>
-                </div>
-
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title">TRAKAI</div>
-                    <div class="modal-work__client-company">IRKLAVIMO BAZE</div>
-                </div>
-
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
-                </div>
-
-               
-
-              
-
-                <div class="modal-work__footer">
-                    <button class="modal-work__btn slickPrev" type="button">
-                        <img src="images/arrows_left.svg" height="11" alt="">
-                        Previous
-                    </button>
-                    <button class="modal-work__btn slickNext" type="button">
-                        Next
-                        <img src="images/arrows_right.svg" height="11" alt="">
-                    </button>
-                </div>
-
-            </div><!-- /.modal-work__content -->
-        </div><!--/.modal-work -->
-
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
-
-
-<div class="modal" id="modal_project_2">
-    <div class="modal__dialog">
-
-        <button class="modal__close" type="button" data-close>
-            <img src="images/Plus.svg" height="32px" alt="Close">
-        </button>
-
-        <div class="modal-work">
-            <div class="modal-work__preview">
-                <div data-slider="slick">
-                    <div>
-                        <img class="modal-work__photo" src="images/Kyokushin_dirzas.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="modal-work__photo" src="images/AugustaWW.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-work__content">
-
-                <div class="modal-work__header">
-                    <h3 class="modal-work__title">STOVYKLOS 2</h3>
-                    <div class="modal-work__info">
-                        STOVYKLOS <span class="modal-work__info-divider">|</span> 2019
-                    </div>
-                </div>
-
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title">RYGA</div>
-                    <div class="modal-work__client-company">LATVIJA</div>
-                </div>
-
-               
-
-                <div class="modal-work__footer">
-                    <button class="modal-work__btn slickPrev" type="button">
-                        <img src="images/arrows_left.svg" height="11" alt="">
-                        Previous
-                    </button>
-                    <button class="modal-work__btn slickNext" type="button">
-                        Next
-                        <img src="images/arrows_right.svg" height="11" alt="">
-                    </button>
-                </div>
-
-            </div><!-- /.modal-work__content -->
-        </div><!--/.modal-work -->
-
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
-
-
-<div class="modal" id="modal_resume">
-    <div class="modal__dialog">
-
-        <button class="modal__close" type="button" data-close>
-            <img src="images/Plus.svg" height="28px" alt="Close">
-        </button>
-
-        <div class="modal__content">
-            <h3 class="modal__title  text-center">RESUME</h3>
-
-            <div class="text-center">
-                <a class="btn btn--thin" href="#">DOWNLOAD PDF</a>
-                <a class="btn btn--thin" href="#">PRINT</a>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline__col  timeline__col--left">
-                    <h4 class="timeline__title">PATIRTIS</h4>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2017 - <b>2020</b></time>
-                        <h5 class="timeline__subtitle">ADMINISTRATORIUS</h5>
-                        <div class="timeline__position">IRKLAVIMAS</div>
-                        <div class="timeline__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis in facilis eum quae sint aliquam, ipsam?</p>
+                <div class="modal-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">IRKLAVIMAS</h3>
+                        <div class="modal-work__info">
+                            IRKLAVIMAS <span class="modal-work__info-divider">|</span> 2018
                         </div>
                     </div>
 
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2017 - <b>DABAR</b></time>
-                        <h5 class="timeline__subtitle">Prezidentas</h5>
-                        <div class="timeline__position">IRKLAVIMO FEDARCIJA</div>
-                        <div class="timeline__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis in facilis eum quae sint aliquam, ipsam?</p>
-                        </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">TRAKAI</div>
+                        <div class="modal-work__client-company">IRKLAVIMO BAZE</div>
                     </div>
 
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2017 - <b>DABAR</b></time>
-                        <h5 class="timeline__subtitle">SPORTININKAS</h5>
-                        <div class="timeline__position">SPORTININKAS</div>
-                        <div class="timeline__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis in facilis eum quae sint aliquam, ipsam?</p>
-                        </div>
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+                            debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+                            accusantium? Sunt sed praesentium est minima.</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img src="images/arrows_left.svg" height="11" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img src="images/arrows_right.svg" height="11" alt="">
+                        </button>
+                    </div>
+
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/Plus.svg" height="28px" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <iframe width="800" height="800" src="https://www.youtube.com/embed/7LEF-GGCdJQ"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
+                <div class="modal-work__content">
 
-                <div class="timeline__col  timeline__col--right">
-                    <h4 class="timeline__title">ISSILAVINIMAS</h4>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
-                        <h5 class="timeline__subtitle">Prezidentas</h5>
-                        <div class="timeline__position">VGTU, VILNIUS</div>
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">STOVYKLOS 2</h3>
+                        <div class="modal-work__info">
+                            STOVYKLOS <span class="modal-work__info-divider">|</span> 2019
+                        </div>
                     </div>
 
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
-                        <h5 class="timeline__subtitle">STUDENTAS</h5>
-                        <div class="timeline__position">LKKF</div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">RYGA</div>
+                        <div class="modal-work__client-company">LATVIJA</div>
                     </div>
 
-                    <h4 class="timeline__title">REZULTATAI</h4>
-                    <div class="progress-bar">
-                        <div class="progress-bar__item">
-                            <div class="progress-bar__left">
-                                <div class="progress-bar__title">UNIVERSIADA</div>
+
+
+                    <div >
+                        <h3 class="modal-work__footer-header">Modalinio Lango Testas</h3>
+                        <p class="modal-work__footer-header">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rem sunt illo nobis obcaecati cum quia vel! Nam autem dolorem quos minus fugit ad neque dolorum mollitia? Explicabo, minima officia!</p>
+                    </div>
+
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+
+    <div class="modal" id="modal_resume">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/Plus.svg" height="28px" alt="Close">
+            </button>
+
+            <div class="modal__content">
+                <h3 class="modal__title  text-center">RESUME</h3>
+
+                <div class="text-center">
+                    <a class="btn btn--thin" href="#">DOWNLOAD PDF</a>
+                    <a class="btn btn--thin" href="#">PRINT</a>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline__col  timeline__col--left">
+                        <h4 class="timeline__title">PATIRTIS</h4>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>2020</b></time>
+                            <h5 class="timeline__subtitle">ADMINISTRATORIUS</h5>
+                            <div class="timeline__position">IRKLAVIMAS</div>
+                            <div class="timeline__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem
+                                    aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis
+                                    in facilis eum quae sint aliquam, ipsam?</p>
                             </div>
-                            <div class="progress-bar__right">
-                                <div class="progress-bar__bar">
-                                    <div class="progress-bar__progress" style="width: 50%;"></div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>DABAR</b></time>
+                            <h5 class="timeline__subtitle">Prezidentas</h5>
+                            <div class="timeline__position">IRKLAVIMO FEDARCIJA</div>
+                            <div class="timeline__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem
+                                    aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis
+                                    in facilis eum quae sint aliquam, ipsam?</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>DABAR</b></time>
+                            <h5 class="timeline__subtitle">SPORTININKAS</h5>
+                            <div class="timeline__position">SPORTININKAS</div>
+                            <div class="timeline__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem
+                                    aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis
+                                    in facilis eum quae sint aliquam, ipsam?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__col  timeline__col--right">
+                        <h4 class="timeline__title">ISSILAVINIMAS</h4>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
+                            <h5 class="timeline__subtitle">Prezidentas</h5>
+                            <div class="timeline__position">VGTU, VILNIUS</div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
+                            <h5 class="timeline__subtitle">STUDENTAS</h5>
+                            <div class="timeline__position">LKKF</div>
+                        </div>
+
+                        <h4 class="timeline__title">REZULTATAI</h4>
+                        <div class="progress-bar">
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">UNIVERSIADA</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 50%;"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="progress-bar__item">
-                            <div class="progress-bar__left">
-                                <div class="progress-bar__title">LATVIJA</div>
-                            </div>
-                            <div class="progress-bar__right">
-                                <div class="progress-bar__bar">
-                                    <div class="progress-bar__progress" style="width: 90%;"></div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">LATVIJA</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 90%;"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="progress-bar__item">
-                            <div class="progress-bar__left">
-                                <div class="progress-bar__title">NYDERLANDAI</div>
-                            </div>
-                            <div class="progress-bar__right">
-                                <div class="progress-bar__bar">
-                                    <div class="progress-bar__progress" style="width: 80%;"></div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">NYDERLANDAI</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 80%;"></div>
+                                    </div>
                                 </div>
                             </div>
+                        </div><!-- /.progress-bar -->
+
+                        <h4 class="timeline__title">APDOVANOJIMAI</h4>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2020</time>
+                            <h5 class="timeline__subtitle">VARZYBOS</h5>
+                            <div class="timeline__position">LIETUVA</div>
+                            <div class="timeline__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem
+                                    aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis
+                                    in facilis eum quae sint aliquam, ipsam?</p>
+                            </div>
                         </div>
-                    </div><!-- /.progress-bar -->
+                    </div><!-- /.timeline__col -->
 
-                    <h4 class="timeline__title">APDOVANOJIMAI</h4>
+                </div><!-- /.timeline -->
 
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2020</time>
-                        <h5 class="timeline__subtitle">VARZYBOS</h5>
-                        <div class="timeline__position">LIETUVA</div>
-                        <div class="timeline__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis in facilis eum quae sint aliquam, ipsam?</p>
-                        </div>
-                    </div>
-                </div><!-- /.timeline__col -->
+                <div class="text-center">
+                    <a class="btn" href="#" data-modal="#modal_hire_me">Rasyk man</a>
+                </div>
 
-            </div><!-- /.timeline -->
+            </div><!-- /.modal__content -->
 
-            <div class="text-center">
-                <a class="btn" href="#" data-modal="#modal_hire_me">Rasyk man</a>
-            </div>
-
-        </div><!-- /.modal__content -->
-
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
 
 
 
 
 
 
-<!-- JS -->
-<script src="js/slick.min.js"></script>
-<script src="js/app.js"></script>
+    <!-- JS -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
+
 </html>
