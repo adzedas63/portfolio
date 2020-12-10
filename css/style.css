@@ -26,7 +26,9 @@ html {
      box-sizing: border-box;
  }
  
- 
+ .carousel-item {
+     margin: 10px auto;
+ }
  .msg {
      color: #63d3ad;
  }
@@ -583,6 +585,7 @@ html {
  }
  
  .about {
+     width: 100%;
      margin: 8.4rem 0;
  }
  
@@ -600,7 +603,7 @@ html {
  
  .about__photo,
  .about__content {
-     width: 50%;
+     width: 100%;
  }
  
  @media (max-width: 991px) {
